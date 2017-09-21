@@ -1,2 +1,2 @@
 # Praticas-de-Programacao
-exercicios referentes a disciplina
+exercicios referentes a disciplina.

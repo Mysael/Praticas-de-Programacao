@@ -2,27 +2,37 @@ package pp.convencoes.complexo;
 
 // removi o "import java.util.Date;"
 
-public class Complexo //Coloquei o nome da classe com letra maiúscula na primeira letra
+//adicionei cabeçalho javadoc
+/**
+ * classe Complexo que realizará operações com valores
+ * @author Mysael
+ * @version 0.01
+ *
+ */
+
+public class complexo //coloquei o nome da classe com letra maiúscula na primeira letra
 {
-    private double Real;
+    private double real; //coloquei "real" no lugar de "real"
 	private double imaginario;   
 
 	/**
-	 * Controi um numero complexo. A parte Real sera 0.0 e a parte
+	 * controi um numero complexo. A parte real sera 0.0 e a parte
 	 * imaginaria tambem sera 0.0.
 	 */
     public complexo() 
-    {	Real = 0.0;
+    {	real = 0.0;
 		imaginario = 0.0;
     }
 
 	/**
-	 * Cria um numero complexo.
-	 * @param I parte imaginaria do numero complexo		
-	 */
-    public complexo(double r, double I) 
-    { 	Real = r;	
-		imaginario = I;
+	 * cria um numero complexo.
+	 * @param i parte imaginaria do numero complexo.	
+	 * @param r parte real do numero complexo.
+	 */ //adicionei parametro para r
+    
+    public complexo(double r, double i) //coloquei e minúsculo a variável "I"
+    { 	real = r;	
+		imaginario = i;
     }  
 
 	/**
@@ -30,16 +40,16 @@ public class Complexo //Coloquei o nome da classe com letra maiúscula na primeir
 	 * @param n valor inteiro a ser somado
 	 */
     public void soma(int n)
-    {	Real += n;
+    {	real += n;
 		imaginario += n;
     }
 	
 	/**
 	 * Soma um numero imaginario a este numero imaginario
-	 * @param C numero imaginario a ser somado
+	 * @param c numero imaginario a ser somado
 	 */
-    public void soma(complexo C)
-    {	Real += C.Real;
-		imaginario += C.imaginario;
+    public void soma(complexo c) //coloquei o "C" para lowercase
+    {	real += c.real;
+		imaginario += c.imaginario;
     }
 }
